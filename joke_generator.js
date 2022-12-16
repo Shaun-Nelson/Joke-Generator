@@ -1,7 +1,7 @@
-API_ENDPOINT = "https://v2.jokeapi.dev/joke/";
-JOKE_TYPE = "?type=single";
-SAFE_MODE = "?safe-mode";
-ELEMENT_ID = "joke";
+const API_ENDPOINT = "https://v2.jokeapi.dev/joke/";
+const JOKE_TYPE = "?type=single";
+const SAFE_MODE = "?safe-mode";
+const ELEMENT_ID = "joke";
 const params = ["blacklistFlags=nsfw,racist,sexist,explicit"];
 
 const getJoke = async () => {
