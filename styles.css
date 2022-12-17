@@ -25,7 +25,16 @@ body{
 
 @media (max-width: 768px) {
     h1 {
-        font-size:1em;
-        text-align:left;
+        font-size: 3em;
+        text-align: left;
+        padding:0.5em 0.5em;
+        margin:0;
+        max-width: 100%;
+        height: auto;
+    }
+
+    body {
+        max-width: 100% 
+        height: auto; 
     }
 };
