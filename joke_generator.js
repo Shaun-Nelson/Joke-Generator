@@ -10,11 +10,15 @@ const getJoke = async () => {
   )
     .then((res) => res.json())
     .then((data) => {
-      if (data.type == "twopart") {
+      if (data.type === "twopart") {
         let result = data.setup + " " + data.delivery;
-        document.getElementById(ELEMENT_ID).innerHTML += result;
+        let element = document.getElementById(ELEMENT_ID);
+        let text = document.createTextNode(result);
+        element.appendChild(text);
       } else {
-        document.getElementById(ELEMENT_ID).innerHTML += data.joke;
+        let element = document.getElementById(ELEMENT_ID);
+        let text = document.createTextNode(data.joke);
+        element.appendChild(text);
       }
     });
 };
